@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O site do Milho!</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='BTD.png')}}" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --display1: none;
+            --display2: none;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            background-image: linear-gradient(90deg, rgba(212, 73, 17, 0.795), rgba(103, 103, 182, 0.603));
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight: bolder;
+            font-size: 4em;
+            width: 600px;
+            text-align: center;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        h1:hover {
+            text-decoration: underline;
+            text-shadow: none;
+            stroke: white;
+            stroke-width: 40px;
+            background-color: blue;
+        }
+
+        span:hover {
+            text-decoration: underline;
+        }
+
+         #Batata {
+            display: var(--display1);
+        }
+
+        #lixo:hover > #Batata {
+                display: block;
+        }
+
+        iframe {
+            display: none;
+        }
+
+        #Batata:hover > iframe {
+            display: block;
+        }
+
+        .aparecer {
+            display: blo;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Este é o site do Emílio</h1>
+<p style="font-size: 1.4em;">Comam milhos crianças!</p>    
+<p>Espera um pouco!! Vocês não sabem como comer 
+    <span id='lixo' style="font-size: larger; font-style: italic; color: yellow;">milho???
+        <p id='cocozinho'>Emílio Swart de Moraes, também conhecido como a pessoa mais gorda do mundo, tem 13 doutorados em comilança, uma das matérias mais requisitadas do mundo!!! Se você quiser aprender mais com esta incrivel pessoa, <span id='Batata' style="color: yellow; font-weight: bolder;">passe o mouse aqui
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t0bWiMhRURo" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </span>
+        </p>
+    </span>
+</p>
+</body>
+</html>
